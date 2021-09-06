@@ -3,32 +3,52 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="main.less" />
+
 
     <!-- font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
-    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <title>Bob's Burgers</title>
     <meta name="description" content="">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>About Us</li>
-        <li>Order Now</li>
-      </ul>
-    </nav>
-      <h1>Bob's Burgers</h1>
-      <button>Order Now</button>
-      <h2>World's Best Burgers</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-      <button>View Menu</button>
-      <h2>Dine-in or Take-out</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-      <button>Contact Us</button>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Menu</li>
+          <li>About Us</li>
+          <li><span>Order Now</span></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <div class="overlay">
+    <div class="banner-area">
+      <img class="logo" src="img/logo.png"  alt="logo">
+    </div>
+  </div>
+    <button class="banner-button">Order Now</button>
+    <section>
+      <article class="wbb">
+        <h2 class="wbb-title">World's Best <span>Burgers</span></h2>
+        <img class="wbb-image" src="img/bobs-burger.png" >
+        <p class="wbb-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+        <button class="wbb-button">View Menu</button>
+      </article>
+      <article class="Din">
+        <h2>Dine-in or <span>Take-out</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+        <button>Contact Us</button>
+      </article>
+    </section>
+
+    </main>
+    <footer>
+     
+    </footer>
       <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
   </body>
 </html>

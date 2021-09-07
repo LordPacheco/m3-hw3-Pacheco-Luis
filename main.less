@@ -28,7 +28,7 @@ body{
             }  
      } 
      main{
-        
+
             .banner-area{
                 background-image: url(img/banner-bg.png);
 
@@ -37,19 +37,19 @@ body{
                 top: 100px;
                 width: 100%;
                 height: 70vh;
-                position: absolute;
-                z-index: -1;
+                position:absolute;
+                
                 
 
-                .logo{
-                    width: 316px;
-                    padding-left: 38%;
-                    padding-top: 11%;
-                    position: absolute;
-                    z-index: 1;
-                }
+            
         } 
-        
+        .logo{
+            width: 316px;
+            padding-left: 38%;
+            padding-top: 11%;
+            position: absolute;
+            
+        }
             .banner-button{
                 background-color: @solid-yellow;
                 font-size: 18px;
@@ -75,7 +75,7 @@ body{
                         color: @regular-text;
                         font-weight: 500;
                         text-transform: uppercase;
-                        span{
+                        .red{
                             color: @solid-red;
                             text-transform: uppercase;
                         }
@@ -172,9 +172,10 @@ body{
                 }
             }
             footer{
+                border-top:5px, @solid-yellow;
                 background-color: @solid-black;
                 width: 100%;
-                margin-top: 44%;
+                margin-top: 40%;
                 img{
                     max-width: 150px;
                     align-items: center;
@@ -186,5 +187,80 @@ body{
     
         }  
    
-        }
+    }
 } 
+
+@media screen and (max-width:675px)and (min-width:320px){
+    .banner-button{
+        background-color: @solid-yellow;
+        font-size: 16px;
+        color: #050500;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 8px;
+        display: block;
+        padding: 12px 24px;
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 30%;
+        
+    } 
+    .banner-area{
+        max-height: 200px;
+    }
+    .logo {
+        display: none;
+        
+    }
+    .wbb-button{
+        margin-top: 50%;
+    }
+    .wbb{
+        padding-bottom: 100px;
+    }
+    .din{
+        padding-top: 100px;
+        max-height: 200px;
+    }
+    .din-text {
+        display:none;
+        width: 0%;
+        height: 0%;
+    }
+    .wbb-text{
+        display:none;
+        width: 0%;
+        height: 0%;
+    }
+    footer{
+        padding-top: 100px;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width:850px) and (min-width:675px){
+
+    .banner-area{
+        max-height: 300px;
+    }
+    .logo {
+        display: block;
+        
+    }
+    .din-text {
+        font-size: 10px;
+ 
+    }
+    .wbb-text{
+        font-size: 10px;
+    }
+    .din-title{
+        font-size: 14px;
+    }
+    .wbb-title{
+        font-size: 14px;
+    }
+    footer{
+        display: none;
+    }
+
+}
